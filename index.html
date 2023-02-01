@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="title">
+            DojoWeather
+        </h1>
+        <div class="cities">
+            <p onclick="displayMessage(this)">
+                Burbank
+            </p>
+            <p onclick="displayMessage(this)">
+                Chicago
+            </p>
+            <p onclick="displayMessage(this)">
+                Dallas
+            </p>
+        </div>
+    </nav>
+    <main>
+        <div class="currentCity">
+            <h2>
+                San Jose
+            </h2>
+            <div class="temperatureOption">
+                <p>
+                    show temperature in
+                </p>
+                <select id="temperature" onchange="swapTemperature(this)">
+                    <option value="C"> C⁰</option>
+                    <option value="F"> F⁰</option>
+                </select>
+
+            </div>
+        </div>
+        <section class="dailyForecast">
+            <div class="weatherItem">
+                <h3>
+                    Today
+                </h3>
+                <img class="weatherImage" src="./images/some_rain.png" alt="Rainy">
+                <p>
+                    some rain
+                </p>
+                <div class="maxMinDegree">
+                    <div class="maxTemperature">
+                        <span class="degree">24</span>⁰
+                    </div>
+                    <div class="minTemperature">
+                        <span class="degree">18</span>⁰
+                    </div>
+                </div>
+
+            </div>
+            <div class="weatherItem">
+                <h3>
+                    Tomorrow
+                </h3>
+                <img class="weatherImage" src="./images/some_sun.png" alt="Rainy">
+                <p>
+                    some sun
+                </p>
+                <div class="maxMinDegree">
+                    <div class="maxTemperature">
+                        <span class="degree">27</span>⁰
+                    </div>
+                    <div class="minTemperature">
+                        <span class="degree">19</span>⁰
+                    </div>
+                </div>
+
+            </div>
+            <div class="weatherItem">
+                <h3>
+                    Friday
+                </h3>
+                <img class="weatherImage" src="./images/some_clouds.png" alt="Rainy">
+                <p>
+                    some clouds
+                </p>
+                <div class="maxMinDegree">
+                    <div class="maxTemperature">
+                        <span class="degree">21</span>⁰
+                    </div>
+                    <div class="minTemperature">
+                        <span class="degree">16</span>⁰
+                    </div>
+                </div>
+
+            </div>
+            <div class="weatherItem">
+                <h3>
+                    Saturday
+                </h3>
+                <img class="weatherImage" src="./images/some_rain.png" alt="Rainy">
+                <p>
+                    some sun
+                </p>
+                <div class="maxMinDegree">
+                    <div class="maxTemperature">
+                        <span class="degree">26</span>⁰
+                    </div>
+                    <div class="minTemperature">
+                        <span class="degree">21</span>⁰
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <div class="cookie">
+        <img src="./images/cookie.png" alt="Cookie image">
+        <div class="cookieContent">
+            <h3>
+                Stop! Cookie time
+            </h3>
+            <p>
+                We use cookies (sadly not the edible ones) to personalize
+                content and ads, to provide social media features and to
+                analyse our traffic. <a href="#"> Read more... </a>
+            </p>
+
+        </div>
+        <button class="cookieButton" onclick="removeCookie(this)">
+            I Accept
+        </button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

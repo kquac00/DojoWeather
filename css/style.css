@@ -1,0 +1,99 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+/* -------------Navigation bar----------------*/
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(105, 114, 235);
+    justify-content: space-between;
+    color: white;
+    
+
+}
+.cities {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 50px;
+    font-size: 24px;
+}
+.title {
+    margin-left: 50px;
+    
+/* ----------------Current city--------------- */
+}
+.currentCity {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+}
+
+/*------------------Main content----------------*/
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.temperatureOption {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+/* -----------------Section-------------------- */
+.dailyForecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+.weatherItem {
+    background-color: rgb(218, 218, 218);
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+.weatherImage {
+    width: 150px;
+    border-radius: 50%;
+    
+}
+.maxMinDegree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.maxTemperature {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.minTemperature {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* -------------------cookie Message-------------------*/
+.cookie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid black;
+    position: fixed;
+    bottom: 10px;
+    margin-left: 50px;
+    background-color: rgb(218, 218, 218);
+    gap: 15px;
+    margin-right: 50px;
+    padding: 15px;
+}
+.cookieButton {
+    border: 3px solid black;
+    background-color: rgb(157, 157, 218);
+    width: 120px;
+    box-shadow: 4px 4px;
+    padding: 5px;
